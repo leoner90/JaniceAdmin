@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+.PostWrapper {
+    animation: 0.65s  linear 0s 1 PostAppearanceAnimation;
+    background-color: rgba(255,255,255,0.85);
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #00000082;
+    margin:10px 8px 0 8px;
+}
+
+.PostWrapper:hover {
+  transform: scale(1.01);
+}
+.PostWrapper:first-of-type {
+    margin-top: 0 ;
+}
+
+.PostHeader {
+    font-family: 'Inter', sans-serif;
+    color: #0c5390;
+ 
+    font-size: 1vw;
+    border-radius: 99% ;
+    font-style: italic;
+    margin: 3px ;
+   
+}
+
+.PostBody {
+    font-family: 'Tiro Telugu', serif;
+    text-align: left;
+    font-size: 1vw;
+
+   
+}
+
+.blogTextWrapper {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    background-color: #fff;
+    
+}
+
+.blogTextWrapper > div {
+  flex: 1;
+    padding: 10px;
+}
+
+.PostImage {
+    height: 100px;
+    width: 100px;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ 
+
+ .postContentWrap {
+     max-height: 100px;
+     overflow: hidden;
+     flex: 6 !important;
+ }
+
+.faThumbTack {
+    padding: 0 20px;
+    transform: rotate(30deg);
+    font-size: 1.8vw;
+    color: #42b6cf;
+}
+
+@keyframes PostAppearanceAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+  
+
+  .editPost,
+  .deletePost {
+    padding: 6px 8px;
+    display: block;
+    min-width: 80%;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .deletePost {
+    background-color: rgb(255, 0, 0);
+    border: 2px solid rgb(123, 0, 0);
+  }
+
+  .editPost {
+    background-color: rgb(38, 164, 203);
+    border: 2px solid rgb(0, 115, 150);
+  }
+
+  .galleryImgPiece {
+    margin-right: 1%;
+    margin-top: 10px;
+    height: 175px;
+    padding: 10px 12px;
+    background-color: #ebebebf2;
+    border-radius: 3px;
+    flex: 0 0 13%;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .imgItself {
+    border-radius: 3px;
+    flex: 6;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  .galleryDeleteBtn {
+ 
+    background-color: #ff6b6b;
+    border: 1px solid #ad0000;
+    color: rgb(255, 220, 220);
+    padding: 5px 7px;
+    border-radius: 3px;
+    margin-top: 7px;
+    cursor: pointer;
+    width: 100%;
+ 
+  font-weight: bold;
+    font-size: 0.8vw;
+  }
+
+  @media only screen and (max-width: 1400px) {
+    .galleryImgPiece {
+      flex: 0 0 15.6%;
+    }
+    .editPost,
+    .deletePost {
+      min-width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .galleryImgPiece {
+      flex: 0 0 24%;
+    }
+    .editPost,
+    .deletePost {
+      min-width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .galleryImgPiece {
+      flex: 0 0 80%;
+      margin: 10px auto;
+    }
+    .blogTextWrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .editPost,
+    .deletePost {
+      padding: 5px 7px;
+      display: inline-block !important;
+      margin: 5px;
+      border-radius: 5px;
+      font-size: 3vw;
+      min-width: 20px;
+      width: auto !important;
+    }
+  
+    .blogTextWrapper > div{
+      flex: none;
+    }
+  
+      .PostBody,
+      .PostHeader,
+      .faThumbTack,
+      .PostSignature {
+          font-size: 3vw;
+      }
+  
+      .faThumbTack {
+          padding: 0 5px;
+      }
+    }
+
+    .imgLazyLoader {
+      border: 7px solid #9eddff;
+      border-top: 7px solid #3498db;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+  
+      z-index: 999;
+      margin: 0 auto;
+      animation: spin 1s linear infinite !important;
+  
+    }
+
+    /* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,138 @@
+.GalleryWrapper {
+  background-color: rgba(255,255,255,0.9);
+  min-height: 100vh;
+ 
+}
+.Gallery {
+  position: relative;
+}
+
+.PopUpWrapper{
+  animation: 0.65s  linear 0s 1 SlideAppearanceAnimation;
+  position: fixed;
+  z-index: 9999;
+  background-color: #adadad;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  display: none;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */   
+  flex: 1;
+}
+
+.PopContentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  flex-direction: column;
+  position: relative;
+}
+
+.PopUpImg {
+  height: 85%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.PopUpHeader,
+.gallerySectionHeader {
+  word-break: break-all;
+  font-size: 1.5vw;
+  padding-bottom: 5%;
+}
+
+.PopUpCancelBtn {
+  right: 30px;
+  top: 10px;
+  font-weight: bold;
+  font-size: 1.2vw;
+  color: red;
+  cursor: pointer;
+  position: absolute;
+  z-index: 9999;
+}
+
+.SliderWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+ 
+.nextBtn, 
+.backBtn {
+  cursor: pointer;
+}
+
+@keyframes SlideAppearanceAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+.GallerySection {
+  margin-bottom: 5px;
+}
+
+.faChevrons {
+  padding: 0 20px;
+  font-size: 1.8vw;
+  color: #42b6cf;
+}
+
+@media only screen and (max-width: 800px) {
+  .PopContentWrapper {
+    width: 90%;
+  }
+  
+.faChevrons,
+.PopUpCancelBtn {
+  font-size: 4vw;
+}
+
+.GallerySection {
+  margin-bottom: 5px;
+}
+
+.PopUpHeade,
+.gallerySectionHeader {
+  font-size: 3vw;
+}
+
+}
+
+.PopUpDeleteBtn {
+  background-color: #ff6b6b;
+  border: 1px solid rgb(193, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 5px 7px;
+  border-radius: 5px;
+  margin-top: 7px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.8vw;
+}
+
+.faTrashCan {
+  font-size: 0.7vw;
+  padding-right: 5px;
+  transform: rotate(-2deg);
+}

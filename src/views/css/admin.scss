@@ -1,0 +1,574 @@
+.adminLoginPageWrapper,
+.addNewPostWrapper {
+    margin: 0 auto;
+    min-height: 100%;
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
+   
+}
+
+.addNewPostWrapper {
+    padding: 100px 15% 15% 100px;
+}
+
+#addNewPostWrapper,
+#modalEdit,
+#addNewImg,
+#newOption,
+#cancelBtn {
+    display: none;
+}
+
+#modalEdit {
+    position: absolute !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #fff;
+    padding: 10%;
+
+}
+.addPostWrapper{
+    display: flex;
+    flex-direction: row;
+}
+.addPostImageWrapper
+{
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+}
+.addPostBodyWrapper {
+    flex: 6;
+    padding:0 10px;
+   
+}
+.addPostImg {
+    border-radius: 5px;
+    width: 100%;
+    flex: 1;
+    margin: 0 auto;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.EditTextArea {
+    width: 100%;
+    min-height:300px;
+    padding: 5px;
+    flex: 1;
+}
+
+.imageSection,
+.EditImageSection {
+    flex: 2;
+    display: flex;
+    padding:0 15px ;
+
+}
+.EditImageSection {
+    flex-direction: column;
+    flex: 3;
+}
+.EditImageSection > .PostImage{
+   flex: 1;
+   
+  
+}
+
+.imgPreview {
+    width: 100%;
+}
+
+
+.postContentWrap {
+    flex: 10;
+}
+
+
+ 
+.postContentWrap2 {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+}
+
+.EditPostWrapper {
+    display: flex;
+    padding: 50px 100px;
+}
+.addNewPostWrapper {
+    position: absolute !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.addPostBtn {
+    padding: 10px 7px;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    background-color: rgb(38, 141, 93);
+    border: 1px solid green;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 0.8vw;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+ 
+.logoutBtn {
+    text-align: left !important;
+    padding: 5px 7px;
+    border-radius: 5px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: rgb(255, 66, 66);
+    border: 1px solid rgb(255, 0, 0);
+    margin: 5px auto;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#modalConfirmation {
+    display: none;
+    background-color: #212331ad;
+    z-index: 9999999;
+}
+.modalConfirmationAgreeBtn,
+.modalConfirmationDisagreeBtn {
+    padding: 7px 12px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 1%;
+    width: 49%;
+}
+
+.modalConfirmationDisagreeBtn {
+    background-color: #ff7171;
+    border: 1px solid rgb(93, 168, 243);
+}
+
+.modalConfirmationAgreeBtn {
+    background-color: #3bab26;
+    border: 1px solid rgb(43, 1, 1);
+}
+
+.modalConfirmContent {
+    background-color: #fff5f5;
+    border-radius: 10px;
+    padding: 25px 70px;
+    margin: 10px;
+}
+
+
+
+.modalConfirmationWarningHeader {
+    color: rgb(255, 125, 125);
+    font-weight: bold;
+    z-index: 99;
+}
+.newPost {
+    margin: 0 7.5%;
+    padding: 20px;
+}
+
+.newPostHeader,
+.editHeader,
+.newPostBody,
+.EditTextArea {
+    margin-bottom: 3px;
+   display: block;
+   width: 100% !important;
+   padding: 10px;
+   border-radius: 5px;
+   border: 2px solid #ddd;
+}
+
+.newPostCloseBtn {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    color: red;
+    font-size: 1.3vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+.newPostBody {
+    min-height: 300px;
+}
+
+.loginHeader {
+    font-style: italic;
+    color: #888;
+}
+
+.login , 
+.password {
+    margin: 5px;
+    border-radius: 2px;
+    padding: 4px;
+    border: 2px solid #888;
+}
+
+.loginSubmitBtn {
+    padding: 5px 12px;
+    border-radius: 5px;
+    background-color: rgb(186, 221, 255);
+    border: 1px solid rgb(11, 104, 158);
+    margin: 5px auto;
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    font-style: italic;
+}
+
+.addNewPost,.addNewImgBtn {
+   
+    background-color: rgb(2, 141, 2);
+    color: #fff;
+    border: 2px solid rgb(2, 141, 2);
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    &:hover {
+        background-color: rgb(1, 93, 1);
+        border: 2px solid rgb(1, 93, 1);
+        color: #FFF
+    }
+}
+ 
+
+ 
+.addPostWrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 800px) {
+    .addPostWrapper{
+      
+        flex-direction: column;
+    }
+    .addPostImg {
+        flex: none;
+    }
+    .addNewPostWrapper {
+        padding: 0;
+    }
+    .newPost {
+        padding: 10px;
+        margin: 0;
+    }
+}
+
+input::file-selector-button {
+    font-weight: bold;
+    color: dodgerblue;
+    padding: 0.5em;
+    border: thin solid grey;
+    border-radius: 3px;
+    word-break: break-all;
+}
+
+input[type="file"] {
+    
+  
+    max-width: 100%;
+ 
+    overflow: hidden;
+}
+
+.GalleryWrapper {
+    padding: 60px 20px;
+    position: relative;
+}
+
+.select {
+    text-align: center;
+}
+
+
+.addImgWrapper{
+    display: flex;
+    min-height: 350px;
+    border: 2px solid #d7d7d7;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.addImgRighBarWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    min-height: 100%;
+    border-left: 2px solid #d7d7d7;
+   
+}
+
+
+// #selectOptions {
+//     width: 100%;
+//     padding: 10px;
+//     margin: 10px;
+//     cursor: pointer;
+//     border-radius: 5px;
+// }
+
+.addNewSectionBtn {
+    border-radius: 5px;
+    background: rgb(224, 255, 203);
+    border: 1px solid rgb(50, 126, 0);;
+    padding: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #061800; 
+}
+
+.addImgBtn {
+    border-radius: 5px;
+    background: green;
+    border: 1px solid rgb(50, 126, 0);;
+    padding: 7px 9px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 0 10px 5px 10px;
+
+}
+
+.cancelBtnAddImg {
+    border-radius: 5px;
+    background: red;
+    border: 1px solid rgb(50, 126, 0);;
+    padding: 10px 9px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    width: 40%;   
+    text-align: center;
+   
+    margin: 10px 0 ;
+}
+.addNewOption {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin-right: 5px;
+     
+}
+
+.ErrorMsg {
+    color: red;
+    font-weight: bold;
+    margin: 0;
+}
+
+.ChooseOprionHeader {
+ 
+  color: rgb(255, 163, 163);
+    flex: 1;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 0.8vw;
+    font-style: italic;
+}
+
+#fileItem,
+#fileItem2 {
+    padding-top: 10px;
+    // min-height: 60px;
+    width: 100%;
+}
+
+
+
+.customSelect {
+    background-color: #f2fdff;
+    padding: 3px 5px;
+    width: 30%;
+    margin: 5px auto;
+    border-radius: 4px 4px 2px 2px;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;  
+    border: 1px solid #abd7df;
+  }
+  
+  .selectContentWrapper {
+    display: flex;
+  }
+  
+  .selectContentWrapper > p{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    display: flex;
+  }
+   
+   .selectArrowDown {
+    color: #0086a5;
+    text-align: right;
+    font-size: 0.8vw;
+   
+   }
+  
+   .selectHeader {
+    flex: 1;
+    color: #015265;
+    font-size: 0.9vw;
+    justify-content: center;
+    font-style: italic;
+   }
+
+.optionsWrapper {
+    text-align: left;
+    position: absolute;
+    background: #fff;
+    border-radius: 10px 0 10px 10px;
+    z-index: 99;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #0092ae;
+    border-top: 1px solid #0092ae;
+    max-height: 350px;
+    overflow-y: scroll;
+}
+
+.optionsWrapper > p {
+    border-bottom: 1px solid #0092ae;
+    padding: 4px;
+    font-style: italic;
+    margin: 0;
+    color: #00586a;
+    font-size: 0.8vw;
+    font-weight: 500;
+    &:hover {
+      background-color: #aaf1ff;
+    }
+    &:last-child {
+      border: none;
+    }
+  }
+
+.optionAwesome {
+    color: #5fb8ca;
+    font-size: 0.85vw;
+    padding: 0  10px 0 5px ;
+    transform: rotate(5deg);
+  }
+
+  .faPlus{
+    padding-left: 5px;
+    font-size: 0.8vw;
+  }
+
+
+.modalConfirmWrapper {
+    margin: 0 auto;
+    min-height: 100%;
+    text-align: center;
+    position: relative;   
+}
+
+
+.modalConfirmWrapper {
+    position: absolute !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #fafafa;
+    border-radius: 10px;
+}
+
+.modalConfirmFlexer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 100%;
+}
+
+.newPostHeaderMain {
+    font-weight: bold;
+    color: #918c8c;
+    font-style: italic;
+}
+.newpostHeaderAwesome {
+    padding-right: 5px;
+}
+
+.PostImage2 {
+    border-radius: 5px;
+    width: 100%;
+    flex: 1;
+    margin: 0 auto;
+    height: 250px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.addImgFloppyAwesome {
+    padding-left: 5px;
+}
+
+.optionsWrapperAddImg {
+    text-align: left;
+    max-height: 190px;
+    overflow-y: scroll;
+    & > p{
+        border-bottom: 1px solid #0092ae;
+        padding: 4px;
+        font-style: italic;
+        margin: 0;
+        color: #00586a;
+        font-size: 0.8vw;
+        font-weight: 500;
+        &:hover {
+          background-color: #aaf1ff;
+        }
+        &:last-child {
+          border: none;
+        }
+    }
+}
+
+.newOptionWrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+#newOptionWrapper {
+    display: none;
+}

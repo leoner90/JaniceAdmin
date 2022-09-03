@@ -1,0 +1,24 @@
+.NavBar {
+  padding-top: 100px;
+  min-height: 100vh;
+  color: #fff;
+  
+}
+
+.NavBar > a {
+  color: #fff;
+  display: block;
+  padding: 5px;
+  font-size: 0.8vw;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  background-color: rgba(89, 89, 89, 0.5);
+  margin: 5px 0;
+}
+
+.active {
+  color : #d9ddff !important;
+  font-size: 0.9vw !important;
+}
+ 

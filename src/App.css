@@ -1,5 +1,52 @@
 .App {
   text-align: center;
+  background-color: #f4f4f4;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+}
+*{
+  box-sizing: border-box;
+}
+.cmsLogo {
+  margin-top: 25px;
+  height: 100px;
+  width: 120px;
+}
+.logOutAwesome {
+  padding-left: 5px;
+}
+
+.logoutBtn2 {
+  text-align: center !important;
+  padding: 4px 7px;
+  border-radius: 5px;
+  background-color: rgb(255, 66, 66);
+  border: 1px solid rgb(255, 0, 0);
+  color: #fff;
+  font-size: 0.75vw;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 3px 30px;
+}
+
+.routerContentWrapper {
+  flex: 10;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.navBarWrapper {
+  background-color: #1d1f2dfa;
+  border-radius: 0 0 10px 0;
+  position: relative;
+}
+
+.BodyWrapper {
+  min-height: 100vh;
+  padding: 15px;
+  padding-top: 3%;
 }
 
 .App-logo {
@@ -28,6 +75,16 @@
   color: #61dafb;
 }
 
+.header {
+  background-color: #1d1f2dfa;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  border-radius: 0 0 20px 0;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +93,22 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+@media only screen and (max-width: 1100px) {
+  .BodyWrapper {
+    margin: 0 10%;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  .BodyWrapper {
+    margin: 0 5%;
+  }
+
+}
+
+
